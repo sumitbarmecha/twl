@@ -1,0 +1,1190 @@
+<!-- template top-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Quary-Model</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/fav.png" />
+    <!-- Apple touch icon -->
+    <link rel="apple-touch-icon" href="assets/images/logo/fav.png" />
+    <!-- line awesome -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <!-- Slick -->
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <!-- Animate css -->
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <!-- Odometer -->
+    <link rel="stylesheet" href="assets/css/odometer.css" />
+    <!-- splitting -->
+    <link rel="stylesheet" href="assets/css/splitting.css" />
+    <!-- magnific-popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <body id="body">
+    <!--==================== Preloader Start ====================-->
+    <div id="loading">
+      <div id="loading-center">
+        <div id="loading-center-absolute">
+          <span class="loader"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-overlay"></div>
+
+    <div class="cursor">
+      <div class="cursor__ball cursor__ball--big">
+        <svg height="30" width="30">
+          <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+        </svg>
+      </div>
+
+      <div class="cursor__ball cursor__ball--small">
+        <svg height="10" width="10">
+          <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+        </svg>
+      </div>
+    </div>
+
+    <!--==================== Preloader End ====================-->
+
+    <!-- dashboard section -->
+    <div class="header-main-area">
+      <div class="header" id="header">
+        <div class="container position-relative">
+          <div class="header-wrapper">
+            <div
+              class="header-menu-wrapper gap--12 align-items-center d-flex flex-column w--100"
+            >
+              <div
+                class="menu-list-wrapper d-flex align-items-center justify-content-between position-relative w--100"
+              >
+                <!-- ham menu -->
+                <i
+                  class="fa-sharp fa-solid fa-bars-staggered ham__menu"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasExample"
+                  aria-controls="offcanvasExample"
+                ></i>
+                <!-- logo -->
+                <div class="logo-wrapper">
+                  <a href="index.html" class="normal-logo" id="normal-logo">
+                    <img src="assets/images/logo/logo.png" alt="..." />
+                  </a>
+                </div>
+
+                <ul class="main-menu">
+                  <li><a class="active" href="#">Home</a></li>
+                  <li><a href="#browse">ABOUT US</a></li>
+                  <li><a href="#portfolio">My Work</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="login-lng d-flex align-items-center gap-3">
+                  <li>
+                    <a class="btn btn-outline--dark radius--30" href="#contact"
+                      >Book a Schedule</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar mobile menu wrap Start-->
+    <div
+      class="offcanvas offcanvas-start text-bg-light"
+      tabindex="-1"
+      id="offcanvasExample"
+    >
+      <div class="offcanvas-header">
+        <div class="logo">
+          <div class="align-items-center d-flex">
+            <div class="logo-wrapper">
+              <a
+                href="index.html"
+                class="normal-logo"
+                id="offcanvas-logo-normal"
+              >
+                <img src="assets/images/logo/logo.png" alt="..." />
+              </a>
+            </div>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="btn-close btn-close-black"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="user-info">
+          <div class="user-thumb">
+            <a href="userDashboard.html">
+              <img src="assets/images/user/user3.png" alt="user-thumb" />
+            </a>
+          </div>
+          <a href="#">
+            <h4>Anonymous Alex</h4>
+          </a>
+        </div>
+        <ul class="side-Nav">
+          <li>
+            <a class="active" href="#"> Home </a>
+          </li>
+          <li>
+            <a href="#browse"> About </a>
+          </li>
+          <li>
+            <a href="#testimonial"> Browse </a>
+          </li>
+          <li>
+            <a href="#portfolio"> My Work </a>
+          </li>
+          <li>
+            <a href="#contact"> Contact </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- < Hero Section -->
+    <section class="hero bg--img">
+      <div class="bg--thumb-one position-absolute">
+        <img src="assets/images/hero/hero-bg1.png" alt="..." />
+      </div>
+      <div class="bg--thumb-two position-absolute">
+        <img class="fit--img" src="assets/images/hero/hero-bg2.png" alt="..." />
+      </div>
+
+      <div class="bg--element position-absolute">
+        <h6 class="title">Model</h6>
+      </div>
+
+      <div class="container position-relative">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div
+              class="hero-content--wrap d-flex flex-column gap--20 justify-content-center align-items-center"
+            >
+              <h1
+                class="text-center hero--title fw--400 wow animate__animated animate__fadeInUp splite-text"
+                data-splitting
+              >
+                Quary is a <span class="text--base">fashion</span> lifestyle
+                Modelo
+              </h1>
+            </div>
+          </div>
+          <div
+            class="col-lg-12 d-flex justify-content-center align-items-center"
+          >
+            <div class="thumb-wrap position-relative">
+              <div class="thumb--one position-absolute deactive--one">
+                <img
+                  class="animation-img"
+                  data-value="2"
+                  src="assets/images/new_asset/IMG_0209.avif"
+                  alt="thumb"
+                />
+              </div>
+              <div class="thumb--two position-absolute deactive--two">
+                <img
+                  class="animation-img"
+                  data-value="5"
+                  src="assets/images/new_asset/IMG_2276.avif"
+                  alt="thumb"
+                />
+              </div>
+              <div class="thumb--three position-absolute deactive--three">
+                <img
+                  class="animation-img"
+                  data-value="7"
+                  src="assets/images/new_asset/546278095_18071708537328292_2589177018074542687_n (1).jpg"
+                  alt="thumb"
+                />
+              </div>
+              <div class="thumb--four position-absolute deactive--four">
+                <img
+                  class="animation-img"
+                  data-value="3"
+                  src="assets/images/new_asset/IMG_2931.avif"
+                  alt="thumb"
+                />
+              </div>
+              <div class="thumb--five position-absolute deactive--five">
+                <img
+                  class="animation-img"
+                  data-value="9"
+                  src="assets/images/new_asset/IMG_3032.avif"
+                  alt="thumb"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  Hero Section />-->
+    <section class="marque--section">
+      <div class="marque---wrap">
+        <div class="marque--slider left-marq">
+          <ul class="marquee--item">
+            <li>
+              <p class="text">Wedding Invites</p>
+            </li>
+          </ul>
+          <ul class="marquee--item">
+            <li>
+              <p class="text"></p>
+            </li>
+          </ul>
+          <ul class="marquee--item">
+            <li>
+              <p class="text">Placecards & Tags</p>
+            </li>
+          </ul>
+          <ul class="marquee--item">
+            <li>
+              <p class="text">Handwritten Letters</p>
+            </li>
+          </ul>
+          <ul class="marquee--item">
+            <li>
+              <p class="text">Event Signages</p>
+            </li>
+          </ul>
+          <!-- x` -->
+          <ul class="marquee--item">
+            <li>
+              <p class="text">Special Invitations</p>
+            </li>
+          </ul>
+          <!-- <ul class="marquee--item">
+            <li>
+              <p class="text">Envelope Addressing</p>
+            </li>
+          </ul> -->
+          <ul class="marquee--item">
+            <li>
+              <p class="text">On-Site Calligraphy</p>
+            </li>
+          </ul>
+          <ul class="marquee--item">
+            <li>
+              <p class="text">Custom Engraving</p>
+            </li>
+          </ul>
+          <ul class="marquee--item">
+            <li>
+              <p class="text">Framed Calligraphy</p>
+            </li>
+          </ul>
+          <ul class="marquee--item">
+            <li>
+              <p class="text">Branding & Packaging</p>
+            </li>
+          </ul>
+          <ul class="marquee--item">
+            <li>
+              <p class="text">Nameplate Calligraphy</p>
+            </li>
+          </ul>
+          <ul class="marquee--item">
+            <li>
+              <p class="text">Personalised Gifts</p>
+            </li>
+          </ul>
+          <ul class="marquee--item">
+            <li>
+              <p class="text">Something Unique</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="browse-section" id="browse">
+      <div class="container">
+        <div class="row justify-content-center gy-4">
+          <div class="col-xl-6 col-lg-12">
+            <div
+              class="section-content-4 d-flex justify-content-center flex-column align-items-center mb-60"
+            >
+              <h6
+                class="title wow animate__animated animate__fadeInUp text-center mb-30 fs--48 fw--300 splite-text"
+                data-splitting
+                data-wow-delay="0.2s"
+              >
+                Words, Beautifully Written.
+              </h6>
+              <p class="subtitle mb-30">
+                Words matter. Make them beautiful. The Writing Letters offers
+                custom calligraphy, hand-lettered invitations, event signage,
+                engraved gifts and more — perfect for weddings, special
+                occasions and branding projects that deserve a personal touch.
+              </p>
+              <a
+                href="#contact"
+                class="btn btn-outline-dark radius--30 hover-bg--base"
+                >Book a Schedule</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="browse-thumb--container position-relative">
+          <div class="row gy-4">
+            <div class="col-lg-6 col-sm-6 d-flex justify-content-end">
+              <div class="browse-thumb--wrap">
+                <div class="browse-thumb--one">
+                  <img
+                    class="fit--img"
+                    src="assets/images/new_asset/IMG_3757.avif"
+                    alt="thumb"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 d-flex justify-content-start">
+              <div class="browse-thumb--wrap">
+                <div class="browse-thumb--two">
+                  <img
+                    class="fit--img"
+                    src="assets/images/new_asset/IMG_4314.avif"
+                    alt="thumb"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 d-flex justify-content-end">
+              <div class="browse-thumb--wrap">
+                <div class="browse-thumb--three">
+                  <img
+                    class="fit--img"
+                    src="assets/images/new_asset/IMG_6057.avif"
+                    alt="thumb"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 d-flex justify-content-start">
+              <div class="browse-thumb--wrap">
+                <div class="browse-thumb--four">
+                  <img
+                    class="fit--img"
+                    src="assets/images/new_asset/IMG_7045.avif"
+                    alt="thumb"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 d-flex justify-content-end">
+              <div class="browse-thumb--wrap">
+                <div class="browse-thumb--five">
+                  <img
+                    class="fit--img"
+                    src="assets/images/new_asset/IMG_9255.avif"
+                    alt="thumb"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 d-flex justify-content-start">
+              <div class="browse-thumb--wrap">
+                <div class="browse-thumb--six">
+                  <img
+                    class="fit--img"
+                    src="assets/images/new_asset/IMG_6412.avif"
+                    alt="thumb"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="video bg--img position-relative"
+      style="background: url(assets/images/new_asset/IMG_9658.MOV)"
+    >
+      <div class="">
+        <div class="popup-video-wrap"></div>
+      </div>
+    </section>
+
+    <section class="expertise--section py-100 bg--black" id="portfolio">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div
+              class="section-content-4 d-flex justify-content-center flex-column align-items-center mb-1"
+            >
+              <h6
+                class="title text--white wow animate__animated animate__fadeInUp text-center mb-30 fs--48 fw--300 splite-text"
+                data-splitting
+                data-wow-delay="0.2s"
+              >
+                Crafted With Care
+                <!-- <span class="text--base">&</span> projects -->
+              </h6>
+              <p class="text--white text-center">
+                Explore a curated collection of our bespoke calligraphy projects
+                — from handwritten wedding invitations and elegant event signage
+                to engraved keepsakes and custom branding. Each piece reflects
+                our craftsmanship, creativity, and passion for turning words
+                into timeless art.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row"></div>
+      </div>
+
+      <div class="expertise-slider--wrap">
+        <div class="expertise-slider--inner">
+          <ul class="image-list">
+            <li class="first--img">
+              <img
+                class="fit--img"
+                src="assets/images/new_asset/139EDF9B-6F25-4D28-BD96-BB741F218255.jpg"
+                alt="slider-thumb"
+              />
+            </li>
+
+            <li class="second--img">
+              <img
+                class="fit--img"
+                src="assets/images/new_asset/IMG_1987.avif"
+                alt="slider-thumb"
+              />
+            </li>
+
+            <li class="third--img">
+              <img
+                class="fit--img"
+                src="assets/images/new_asset/IMG_4634.avif"
+                alt="slider-thumb"
+              />
+            </li>
+
+            <li class="forth--img">
+              <img
+                class="fit--img"
+                src="assets/images/new_asset/IMG_3318.avif"
+                alt="slider-thumb"
+              />
+            </li>
+
+            <li class="first--img">
+              <img
+                class="fit--img"
+                src="assets/images/new_asset/IMG_4634.avif"
+                alt="slider-thumb"
+              />
+            </li>
+
+            <li class="second--img">
+              <img
+                class="fit--img"
+                src="assets/images/new_asset/IMG_5579.avif"
+                alt="slider-thumb"
+              />
+            </li>
+
+            <li class="third--img">
+              <img
+                class="fit--img"
+                src="assets/images/new_asset/IMG_4743.avif"
+                alt="slider-thumb"
+              />
+            </li>
+
+            <li class="forth--img">
+              <img
+                class="fit--img"
+                src="assets/images/new_asset/IMG_5853.JPG"
+                alt="slider-thumb"
+              />
+            </li>
+
+            <li class="first--img">
+              <img
+                class="fit--img"
+                src="assets/images/new_asset/IMG_6986.avif"
+                alt="slider-thumb"
+              />
+            </li>
+
+            <li class="second--img">
+              <img
+                class="fit--img"
+                src="assets/images/new_asset/IMG_7033.avif"
+                alt="slider-thumb"
+              />
+            </li>
+
+            <li class="third--img">
+              <img
+                class="fit--img"
+                src="assets/images/new_asset/IMG_2451.avif"
+                alt="slider-thumb"
+              />
+            </li>
+
+            <li class="forth--img">
+              <img
+                class="fit--img"
+                src="assets/images/new_asset/IMG_2719.avif"
+                alt="slider-thumb"
+              />
+            </li>
+
+            <li class="first--img">
+              <img
+                class="fit--img"
+                src="assets/images/new_asset/IMG_5579.avif"
+                alt="slider-thumb"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="case-study--wrap position-relative">
+      <div class="case-study">
+        <div class="case--container one py-120">
+          <div class="bg--thumb position-absolute">
+            <img
+              class="fit--img"
+              src="assets/images/common/bg-thumb.png"
+              alt="..."
+            />
+          </div>
+          <div class="bg--thumb-two position-absolute">
+            <img
+              class="fit--img"
+              src="assets/images/common/bg-thumb2.png"
+              alt="..."
+            />
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="thumb--wrap">
+                  <img
+                    class="fit--img"
+                    src="assets/images/new_asset/IMG_2623.avif"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="content--wrap mt-100">
+                  <h6 class="fs--42 fw--600">Wedding Invitations</h6>
+                  <p>
+                    Your wedding invites are a great glimpse into the style you
+                    reflect. With regard to designing and printing your wedding
+                    stationery, we've got you covered from save the dates,
+                    e-invites to wedding invitations and all the collateral's
+                    required for the days
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="case--container two">
+          <div class="bg--thumb position-absolute">
+            <img
+              class="fit--img"
+              src="assets/images/common/bg-thumb.png"
+              alt="..."
+            />
+          </div>
+          <div class="bg--thumb-two position-absolute">
+            <img
+              class="fit--img"
+              src="assets/images/common/bg-thumb2.png"
+              alt="..."
+            />
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="thumb--wrap">
+                  <img
+                    class="fit--img"
+                    src="assets/images/new_asset/IMG_2347.JPG"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="content--wrap mt-100">
+                  <h6 class="fs--42 fw--600">
+                    Personalised Gifts & Engravings
+                  </h6>
+                  <p>
+                    Handwritten quotes, monograms and engraved keepsakes—from
+                    mugs and perfume bottles to framed prints—crafted to become
+                    heirlooms. Ideal for weddings, anniversaries and premium
+                    corporate gifts.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="case--container three">
+          <div class="bg--thumb position-absolute">
+            <img
+              class="fit--img"
+              src="assets/images/common/bg-thumb.png"
+              alt="..."
+            />
+          </div>
+          <div class="bg--thumb-two position-absolute">
+            <img
+              class="fit--img"
+              src="assets/images/common/bg-thumb2.png"
+              alt="..."
+            />
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="thumb--wrap">
+                  <img
+                    class="fit--img"
+                    src="assets/images/new_asset/IMG_3389.JPG"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="content--wrap mt-100">
+                  <h6 class="fs--42 fw--600">Signage & Nameplates</h6>
+                  <p>
+                    Name tags make your gifting experience so much more personal
+                    and  uniqe. Placecards make the ideal finishing touch for
+                    your dinner. Placecards and name tags go beyond paper, they
+                    can be done on leaves, wood, and more
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<div class="case--container four">
+          <div class="bg--thumb position-absolute">
+            <img
+              class="fit--img"
+              src="assets/images/common/bg-thumb.png"
+              alt="..."
+            />
+          </div>
+          <div class="bg--thumb-two position-absolute">
+            <img
+              class="fit--img"
+              src="assets/images/common/bg-thumb2.png"
+              alt="..."
+            />
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="thumb--wrap">
+                  <img
+                    class="fit--img"
+                    src="assets/images/common/case1.png"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="content--wrap mt-100">
+                  <h6 class="fs--42 fw--600">
+                    Handwritten Letters
+                  </h6>
+                  <p>
+                    Introductory and advanced calligraphy workshops for groups
+                    or private clients, plus turnkey corporate kits for employee
+                    gifts and brand activations. Practical, hands-on sessions
+                    that teach technique and leave participants with polished
+                    pieces.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="case--container four">
+          <div class="bg--thumb position-absolute">
+            <img
+              class="fit--img"
+              src="assets/images/common/bg-thumb.png"
+              alt="..."
+            />
+          </div>
+          <div class="bg--thumb-two position-absolute">
+            <img
+              class="fit--img"
+              src="assets/images/common/bg-thumb2.png"
+              alt="..."
+            />
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="thumb--wrap">
+                  <img
+                    class="fit--img"
+                    src="assets/images/common/case1.png"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="content--wrap mt-100">
+                  <h6 class="fs--42 fw--600">
+                    Workshops & Corporate Calligraphy Kits
+                  </h6>
+                  <p>
+                    Introductory and advanced calligraphy workshops for groups
+                    or private clients, plus turnkey corporate kits for employee
+                    gifts and brand activations. Practical, hands-on sessions
+                    that teach technique and leave participants with polished
+                    pieces.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="testemonial--section py-120 bg--black" id="testimonial">
+    <div class="container">
+
+        <div class="row justify-content-center gy-4">
+            <div class="col-xl-6 col-lg-12">
+                <div class="section-content-4 d-flex justify-content-center flex-column align-items-center mb-60">
+                    <p class="subtitle mb-30 text--white">//Testimonials</p>
+                    <h6 class="title wow animate__animated animate__fadeInUp text-center mb-30 fs--48 fw--500 splite-text text--white" data-splitting data-wow-delay="0.2s">Client <span class="text--base">Love</span></h6>
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="row testimonial-slider">
+                    <div class="testemonial--card d-flex justify-content-center">
+                        <div class="content-wrap d-flex flex-column justify-content-center align-items-center">
+                            <p class="title text--white text-center fw--500 mb-50">Working with Din Jeti was an absolute pleasure! Their ability to bring energy and emotion to the shoot made all the difference. They truly understand how to connect with the camera, and our campaign's success speaks for itself!</p>
+        
+                            <div class="thumb--wrap d-flex justify-content-center flex-shrink-0">
+                                <img class="fit--img" src="assets/images/user/user4.png" alt="...">
+                            </div>
+                            <p class="text-center text--white fw--500">Sarah T., Fashion Photographer</p>
+                        
+                        </div>
+                    </div>
+
+                    <div class="testemonial--card d-flex justify-content-center">
+                        <div class="content-wrap d-flex flex-column justify-content-center align-items-center">
+                            <p class="title text--white text-center fw--500 mb-50">Working with Din Jeti was an absolute pleasure! Their ability to bring energy and emotion to the shoot made all the difference. They truly understand how to connect with the camera, and our campaign's success speaks for itself!</p>
+        
+                            <div class="thumb--wrap d-flex justify-content-center flex-shrink-0">
+                                <img class="fit--img" src="assets/images/user/user1.png" alt="...">
+                            </div>
+                            <p class="text-center text--white fw--500">Sarah T., Fashion Photographer</p>
+                        
+                        </div>
+                    </div>
+
+                    <div class="testemonial--card d-flex justify-content-center">
+                        <div class="content-wrap d-flex flex-column justify-content-center align-items-center">
+                            <p class="title text--white text-center fw--500 mb-50">Working with Din Jeti was an absolute pleasure! Their ability to bring energy and emotion to the shoot made all the difference. They truly understand how to connect with the camera, and our campaign's success speaks for itself!</p>
+        
+                            <div class="thumb--wrap d-flex justify-content-center flex-shrink-0">
+                                <img class="fit--img" src="assets/images/user/user2.png" alt="...">
+                            </div>
+                            <p class="text-center text--white fw--500">Sarah T., Fashion Photographer</p>
+                        
+                        </div>
+                    </div>
+
+                    <div class="testemonial--card d-flex justify-content-center">
+                        <div class="content-wrap d-flex flex-column justify-content-center align-items-center">
+                            <p class="title text--white text-center fw--500 mb-50">Working with Din Jeti was an absolute pleasure! Their ability to bring energy and emotion to the shoot made all the difference. They truly understand how to connect with the camera, and our campaign's success speaks for itself!</p>
+        
+                            <div class="thumb--wrap d-flex justify-content-center flex-shrink-0">
+                                <img class="fit--img" src="assets/images/user/user3.png" alt="...">
+                            </div>
+                            <p class="text-center text--white fw--500">Sarah T., Fashion Photographer</p>
+                        
+                        </div>
+                    </div>
+
+                    <div class="testemonial--card d-flex justify-content-center">
+                        <div class="content-wrap d-flex flex-column justify-content-center align-items-center">
+                            <p class="title text--white text-center fw--500 mb-50">Working with Din Jeti was an absolute pleasure! Their ability to bring energy and emotion to the shoot made all the difference. They truly understand how to connect with the camera, and our campaign's success speaks for itself!</p>
+        
+                            <div class="thumb--wrap d-flex justify-content-center flex-shrink-0">
+                                <img class="fit--img" src="assets/images/user/user4.png" alt="...">
+                            </div>
+                            <p class="text-center text--white fw--500">Sarah T., Fashion Photographer</p>
+                        
+                        </div>
+                    </div>
+
+                    <div class="testemonial--card d-flex justify-content-center">
+                        <div class="content-wrap d-flex flex-column justify-content-center align-items-center">
+                            <p class="title text--white text-center fw--500 mb-50">Working with Din Jeti was an absolute pleasure! Their ability to bring energy and emotion to the shoot made all the difference. They truly understand how to connect with the camera, and our campaign's success speaks for itself!</p>
+        
+                            <div class="thumb--wrap d-flex justify-content-center flex-shrink-0">
+                                <img class="fit--img" src="assets/images/user/user4.png" alt="...">
+                            </div>
+                            <p class="text-center text--white fw--500">Sarah T., Fashion Photographer</p>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+</section> -->
+
+    <section class="contact--section py-120" id="contact">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-xl-7 col-lg-6">
+            <div
+              class="section-content-4 d-flex justify-content-start flex-column align-items-start mb-60"
+            >
+              <h6
+                class="title wow animate__animated animate__fadeInUp text-start mb-30 fs--48 fw--500 splite-text"
+                data-splitting
+                data-wow-delay="0.2s"
+              >
+                Have a photoshoot idea? Let's get in touch!
+              </h6>
+              <p>
+                Discover the vibrant personalities, styles, and opportunities
+                within the world of modeling. Whether you’re looking for the
+                ideal model for your project or aspiring to be part of our
+                exceptional roster
+              </p>
+            </div>
+
+            <form>
+              <div class="row gy-5">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input
+                      class="form--control text--black radius--0 border-top--noe border-left--none border-right--none ps-0 border-bottom-solid5 placeholder--light"
+                      placeholder="First name"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input
+                      class="form--control text--black radius--0 border-top--noe border-left--none border-right--none ps-0 border-bottom-solid5 placeholder--light"
+                      placeholder="Last name"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input
+                      class="form--control text--black radius--0 border-top--noe border-left--none border-right--none ps-0 border-bottom-solid5 placeholder--light"
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input
+                      class="form--control text--black radius--0 border-top--noe border-left--none border-right--none ps-0 border-bottom-solid5 placeholder--light"
+                      placeholder="Phone"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <textarea
+                      class="form--control text--black radius--0 border-top--noe border-left--none border-right--none ps-0 border-bottom-solid5 placeholder--light"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-end mt-4">
+                <button class="btn btn-outline-dark hover-bg--base radius--30">
+                  Book a Schedule
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-xl-5 col-lg-6">
+            <div class="thumb--wrap">
+              <img src="assets/images/common/contact-bg.png" alt="..." />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <!-- Footer Start Here -->
+    <footer class="footer-area bg--black overflow--hidden">
+      <div class="footer-top">
+        <div class="container">
+          <div class="pt-100 pb-0">
+            <div class="row gy-4 justify-content-center">
+              <div class="col-xl-4 col-sm-6">
+                <div class="footer-item">
+                  <div class="footer-item--logo">
+                    <a
+                      href="index.html"
+                      class="footer-logo-normal"
+                      id="footer-logo-normal"
+                    >
+                      <img src="assets/images/logo/footer-logo.png" alt="" />
+                    </a>
+                  </div>
+                  <p class="footer-item--desc">
+                    Easily upload your products and start making sales quickly
+                    with our user-friendly platform and efficient tools.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-xl-2 col-sm-6">
+                <div class="footer-item">
+                  <h5 class="footer-item--title">Useful link</h5>
+                  <ul class="footer-menu">
+                    <li class="menu--item">
+                      <a href="#browse" class="menu--link"> About </a>
+                    </li>
+                    <li class="menu--item">
+                      <a href="#browse" class="menu--link"> Our service</a>
+                    </li>
+                    <li class="menu--item">
+                      <a href="#portfolio" class="menu--link"> Our Team</a>
+                    </li>
+                    <li class="menu--item">
+                      <a href="#contact" class="menu--link"> Contact us </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-sm-6">
+                <div class="footer-item">
+                  <h5 class="footer-item--title">Contact Info</h5>
+                  <div
+                    class="footer-contact-info mb-3 d-flex justify-content-start gap--12"
+                  >
+                    <div
+                      class="d-flex justify-content-start align-items-center"
+                    >
+                      <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="d-flex align-items-center flex-wrap gap-2">
+                      <p class="fw--400">Phone Number</p>
+                      <p><a href="tel:+8800000000000">+880 0000 000 000</a></p>
+                    </div>
+                  </div>
+                  <div
+                    class="footer-contact-info mb-3 d-flex justify-content-start gap--12"
+                  >
+                    <div
+                      class="d-flex justify-content-start align-items-center"
+                    >
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="d-flex align-items-center flex-wrap gap-2">
+                      <p class="fw--400">Email Address</p>
+                      <p>
+                        <a href="mailto:demo123@gmail.com">demo123@gmail.com</a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="footer-contact-info mb-3 d-flex justify-content-start gap--12"
+                  >
+                    <div
+                      class="d-flex justify-content-start align-items-center"
+                    >
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="d-flex align-items-center flex-wrap gap-2">
+                      <p class="fw--400">Themeforest, Envato HQ</p>
+                      <p><a href="#">Dhaka Hospital</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-sm-6">
+                <div class="footer-item">
+                  <p class="footer-item--title text--white">Agency</p>
+                  <p class="text--white mb-4">
+                    Feel free to reach out if you want to collaborate with us,
+                    or simply chat.
+                  </p>
+
+                  <div class="footer-subscribe-box mb-4">
+                    <form>
+                      <input
+                        class="form--control footer-input w--100"
+                        name="email"
+                        type="email"
+                        placeholder="Enter your email"
+                        id="email"
+                      />
+                      <button
+                        class="search-btn bg--base text--white"
+                        type="submit"
+                      >
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                    </form>
+                  </div>
+
+                  <ul class="social-list z--9 position-relative">
+                    <li class="social-list--item">
+                      <a
+                        href="https://www.facebook.com"
+                        class="social-list__link icon-wrapper"
+                      >
+                        <div class="icon">
+                          <i class="fab fa-facebook-f"></i>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="social-list--item">
+                      <a
+                        href="https://www.twitter.com"
+                        class="social-list__link icon-wrapper active"
+                      >
+                        <div class="icon">
+                          <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="social-list--item">
+                      <a
+                        href="https://www.linkedin.com"
+                        class="social-list__link icon-wrapper"
+                      >
+                        <div class="icon">
+                          <i class="fab fa-linkedin-in"></i>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="social-list--item">
+                      <a
+                        href="https://www.pinterest.com"
+                        class="social-list__link icon-wrapper"
+                      >
+                        <div class="icon"><i class="fab fa-instagram"></i></div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- bottom Footer -->
+            <div class="bottom-footer pt-4 pb-3">
+              <div class="container">
+                <div class="row text-center gy-2">
+                  <div class="col-lg-12">
+                    <div class="bottom-footer-text">
+                      &copy; Copyright 2024 . All rights reserved.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Top End-->
+    </footer>
+    <!-- Footer End Here -->
+
+    <!-- TapToTop -->
+    <div class="scroll-top show">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="
+            transition: stroke-dashoffset 10ms linear 0s;
+            stroke-dasharray: 307.919, 307.919;
+            stroke-dashoffset: 197.514;
+          "
+        ></path>
+      </svg>
+    </div>
+
+    <!-- template bottom -->
+    <!-- Jquery js -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Slick js -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- wow js -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- splitting js -->
+    <script src="assets/js/splitting.min.js"></script>
+    <!-- magnific-popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- gsap -->
+    <script src="assets/js/gsap.min.js"></script>
+    <!-- gsap -->
+    <script src="assets/js/Scroll.min.js"></script>
+    <!-- gsap -->
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <!-- smoothscroll -->
+    <script src="assets/js/smoothscroll.min.js"></script>
+
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

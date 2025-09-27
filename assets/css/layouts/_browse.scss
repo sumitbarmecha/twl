@@ -1,0 +1,117 @@
+.browse-section{
+    padding: 100px 0px 120px 0px;
+    position: relative;
+    overflow-x: hidden;
+
+    .section-content-4 {
+        position: sticky;
+        top: 100px;
+    }
+}
+
+
+.browse-thumb--wrap {
+    position: relative;
+
+    .browse-thumb--one {
+        width: 478px;
+        height: 576px;
+    
+        transition:  .8s linear;
+        position: relative;
+        top: -358px;
+        left: -360px;
+    }
+    .deactive--one{
+        top: 0;
+        left: 0;
+        transition:  .8s linear;
+
+    }
+
+    .browse-thumb--two {
+        width: 478px;
+    height: 576px;
+
+        border-radius: 0px 200px 0px 0px;
+        overflow: hidden;
+        transition:  .8s linear;
+        position: relative;
+        top: -450px;
+        right: -370px;
+    }
+    .deactive--two{
+        top: 0px;
+        right: 0px;
+        transition:  .8s linear;
+
+    }
+
+    .browse-thumb--three {
+        width: 478px;
+        height: 576px;
+    
+        border-radius: 0px 0px 0px 200px;
+        overflow: hidden;
+        transition:  .8s linear;
+        position: relative;
+        top: -200px;
+        left: -400px;
+    }
+    .deactive--three{
+        top: 0px;
+        left: 0px;
+        transition:  .8s linear;
+        
+    }
+
+    .browse-thumb--four {
+        width: 478px;
+        height: 576px;
+    
+        overflow: hidden;
+        transition:  .8s linear;
+        position: relative;
+        top: -350px;
+        right: -350px;
+    }
+    .deactive--four{
+        top: 0px;
+        right: 0px;
+        transition:  .8s linear;
+    }
+
+    .browse-thumb--five {
+        width: 478px;
+        height: 576px;
+    
+        overflow: hidden;
+        position: relative;
+        top: -100px;
+        left: -200px;
+    }
+    .deactive--five{
+        top: 0px;
+        left: 0px;
+        transition:  .8s linear;
+    }
+
+    .browse-thumb--six {
+        width: 478px;
+        height: 576px;
+    
+        border-radius: 200px 0px 0px 0px;
+        overflow: hidden;
+        transition:  .8s linear;
+        position: relative;
+        top: -250px;
+        right: -200px;
+    }
+    .deactive--six{
+        top: 0px;
+        right: 0px;
+        transition:  .8s linear;
+
+    }
+
+}
