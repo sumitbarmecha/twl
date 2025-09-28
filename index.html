@@ -80,7 +80,7 @@
                 <!-- logo -->
                 <div class="logo-wrapper">
                   <a href="index.html" class="normal-logo" id="normal-logo">
-                    <img src="assets/images/logo/logo.png" alt="..." />
+                    <img  src="assets/images/new_asset/logo.png" alt="..." />
                   </a>
                 </div>
 
@@ -92,9 +92,10 @@
                 </ul>
                 <ul class="login-lng d-flex align-items-center gap-3">
                   <li>
-                    <a class="btn btn-outline--dark radius--30" href="#contact"
-                      >Book a Schedule</a
-                    >
+                  <a  href="https://wa.me/911234567890?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20The%20Writing%20Letters%20services!" target="_blank"
+  class="btn btn-outline-dark hover-bg--base radius--30">
+                 Let’s Talk
+                </a>
                   </li>
                 </ul>
               </div>
@@ -119,7 +120,7 @@
                 class="normal-logo"
                 id="offcanvas-logo-normal"
               >
-                <img src="assets/images/logo/logo.png" alt="..." />
+                <img src="assets/images/new_asset/logo.png" alt="..." />
               </a>
             </div>
           </div>
@@ -325,24 +326,21 @@
             <div
               class="section-content-4 d-flex justify-content-center flex-column align-items-center mb-60"
             >
-              <h6
+              <!-- <h6
                 class="title wow animate__animated animate__fadeInUp text-center mb-30 fs--48 fw--300 splite-text"
                 data-splitting
                 data-wow-delay="0.2s"
               >
                 Words, Beautifully Written.
-              </h6>
+              </h6> -->
+              <img src="assets/images/new_asset/calligraphy.png" alt="">
               <p class="subtitle mb-30">
-                Words matter. Make them beautiful. The Writing Letters offers
-                custom calligraphy, hand-lettered invitations, event signage,
-                engraved gifts and more — perfect for weddings, special
-                occasions and branding projects that deserve a personal touch.
+              Where words meet art. Calligraphy adds soul to the simple, and engraving makes it last forever. Because when words are written with heart, they don’t just stay on paper — they live on in memories.
               </p>
-              <a
-                href="#contact"
-                class="btn btn-outline-dark radius--30 hover-bg--base"
-                >Book a Schedule</a
-              >
+               <a  href="https://wa.me/911234567890?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20The%20Writing%20Letters%20services!" target="_blank"
+  class="btn btn-outline-dark hover-bg--base radius--30">
+                 Let’s Talk
+                </a>
             </div>
           </div>
         </div>
@@ -422,10 +420,17 @@
 
     <section
       class="video bg--img position-relative"
-      style="background: url(assets/images/new_asset/IMG_9658.MOV)"
+      style="background: #000;"
     >
       <div class="">
-        <div class="popup-video-wrap"></div>
+        <video
+          src="assets/images/new_asset/IMG_3304.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          style="width:100%;height:auto;display:block;border-radius:12px;object-fit:cover;"
+        ></video>
       </div>
     </section>
 
@@ -472,7 +477,7 @@
             <li class="second--img">
               <img
                 class="fit--img"
-                src="assets/images/new_asset/IMG_1987.avif"
+                src="assets/images/new_asset/IMG_8785.jpg"
                 alt="slider-thumb"
               />
             </li>
@@ -945,9 +950,10 @@
               </div>
 
               <div class="d-flex justify-content-end mt-4">
-                <button class="btn btn-outline-dark hover-bg--base radius--30">
-                  Book a Schedule
-                </button>
+                <a  href="https://wa.me/911234567890?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20The%20Writing%20Letters%20services!" target="_blank"
+  class="btn btn-outline-dark hover-bg--base radius--30">
+                 Let’s Talk
+                </a>
               </div>
             </form>
           </div>
@@ -976,7 +982,7 @@
                       class="footer-logo-normal"
                       id="footer-logo-normal"
                     >
-                      <img src="assets/images/logo/footer-logo.png" alt="" />
+                      <img src="assets/images/new_asset/logo.png" alt="" />
                     </a>
                   </div>
                   <p class="footer-item--desc">
@@ -1186,5 +1192,30 @@
 
     <!-- main js -->
     <script src="assets/js/main.js"></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const videoSection = document.querySelector('.video.bg--img');
+    const video = videoSection.querySelector('video');
+
+    // Pause video initially for best effect
+    video.pause();
+
+    // Intersection Observer to play video when in view
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            video.play();
+          } else {
+            video.pause();
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    observer.observe(videoSection);
+  });
+</script>
   </body>
 </html>
